@@ -2,7 +2,8 @@
    ====== EDIT HERE ====== */
 window.CONFIG = {
   repName: 'Dreamlore LLC',    // shown in the footer
-  phone: '9545917771',         // e.g. '3125550100' (digits only) — used for "Text" and "Call"
+  phone: '9545917771',
+  whatsapp: '9545917771',      // WhatsApp number (digits only); '' hides the WhatsApp buttons         // e.g. '3125550100' (digits only) — used for "Text" and "Call"
   email: 'info@idreamlore.com', // e.g. 'you@gmail.com'
   base: '60637',               // only the ZIP is shown publicly
   authorized: false,           // true once Cuckoo Rental America has accepted you as a representative
@@ -54,7 +55,7 @@ window.CONFIG = {
       qTitle: 'Get your free quote', qSub: 'No commitment. Fill this in, then tap “Send by text” or “Send by email”.',
       fName: 'Your name', fPhone: 'Phone', fZip: 'ZIP code', fWho: 'For', home: 'My home', business: 'My business / office / church',
       fProd: 'Product', fYears: 'Contract', fWhen: 'Best time to reach me', any: 'Any time', morning: 'Morning', afternoon: 'Afternoon', evening: 'Evening',
-      fMsg: 'Questions (optional)', bySms: 'Send by text', byMail: 'Send by email', byCall: 'Call now', notSure: "Not sure yet — help me choose",
+      fMsg: 'Questions (optional)', bySms: 'Send by text', byWa: 'Send on WhatsApp', ctaWa: 'WhatsApp', waHello: 'Hello! I have a question about water / air purifier rentals.', byMail: 'Send by email', byCall: 'Call now', notSure: "Not sure yet — help me choose",
       privacy: 'Your details go only to me, through your own phone or email app. This site stores nothing.',
       errName: 'Please enter your name and phone number.', errContact: 'Contact details are not set up yet.',
       faqTitle: 'Questions',
@@ -102,7 +103,7 @@ window.CONFIG = {
       qTitle: 'Pide tu cotización gratis', qSub: 'Sin compromiso. Llena esto y toca “Enviar por texto” o “Enviar por correo”.',
       fName: 'Tu nombre', fPhone: 'Teléfono', fZip: 'Código postal', fWho: 'Para', home: 'Mi casa', business: 'Mi negocio / oficina / iglesia',
       fProd: 'Producto', fYears: 'Contrato', fWhen: 'Mejor hora para contactarte', any: 'Cualquier hora', morning: 'Mañana', afternoon: 'Tarde', evening: 'Noche',
-      fMsg: 'Preguntas (opcional)', bySms: 'Enviar por texto', byMail: 'Enviar por correo', byCall: 'Llamar ahora', notSure: 'Aún no sé — ayúdame a elegir',
+      fMsg: 'Preguntas (opcional)', bySms: 'Enviar por texto', byWa: 'Enviar por WhatsApp', ctaWa: 'WhatsApp', waHello: '¡Hola! Tengo una pregunta sobre la renta de purificadores de agua / aire.', byMail: 'Enviar por correo', byCall: 'Llamar ahora', notSure: 'Aún no sé — ayúdame a elegir',
       privacy: 'Tus datos me llegan solo a mí, desde tu propia app de mensajes o correo. Este sitio no guarda nada.',
       errName: 'Escribe tu nombre y tu número de teléfono.', errContact: 'Los datos de contacto aún no están configurados.',
       faqTitle: 'Preguntas',
@@ -242,6 +243,7 @@ window.CONFIG = {
     $('#lang').textContent = st.lang === 'en' ? 'Español' : 'English';
     $('#repLine').textContent = (C.repName ? C.repName + ' · ' : '') + (C.authorized ? l.repAuth : l.repIndep);
     $('#disclaimer').textContent = fill(l.disclaimer);
+    Array.prototype.forEach.call(document.querySelectorAll('.js-wa'), function (a) { if (C.whatsapp) a.href = 'https://wa.me/1' + C.whatsapp + '?text=' + encodeURIComponent(l.waHello); });
     // product list in the form + calculator
     var cur = $('#fprod').value, cur2 = $('#pick').value;
     $('#fprod').innerHTML = '<option value="">' + esc(l.notSure) + '</option>' + P.map(function (p) { return '<option value="' + esc(p.id) + '">' + esc(p.name[st.lang]) + ' (' + esc(p.id) + ')</option>'; }).join('');
@@ -284,6 +286,10 @@ window.CONFIG = {
       // iOS and Android both accept "sms:NUMBER?&body=" (Android ignores the extra &)
       location.href = 'sms:+1' + C.phone + '?&body=' + encodeURIComponent(message());
     };
+    $('#byWa').onclick = function () {
+      if (!check('whatsapp')) return;
+      window.open('https://wa.me/1' + C.whatsapp + '?text=' + encodeURIComponent(message()), '_blank', 'noopener');
+    };
     $('#byMail').onclick = function () {
       if (!check('email')) return;
       location.href = 'mailto:' + C.email + '?subject=' + encodeURIComponent('Quote — ' + ($('#fprod').value || 'purifier')) + '&body=' + encodeURIComponent(message());
@@ -292,6 +298,7 @@ window.CONFIG = {
       if (C.phone) a.href = 'tel:+1' + C.phone; else a.href = '#quote';
     });
     if (!C.email) $('#byMail').style.display = 'none';
+    if (!C.whatsapp) { $('#byWa').style.display = 'none'; Array.prototype.forEach.call(document.querySelectorAll('.js-wa'), function (a) { a.style.display = 'none'; }); }
     $('#area').innerHTML = C.area.map(function (z) { return '<span>' + z + '</span>'; }).join('');
   }
 

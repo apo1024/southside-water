@@ -28,6 +28,7 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);bac
 .btn-main{background:var(--brand);color:#fff}.btn-main:hover{background:var(--brand2)}
 .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
 .btn-green{background:var(--accent);color:#fff}
+.btn-wa{background:#25d366;color:#fff}.btn-wa:hover{background:#1da851}
 .hero{background:radial-gradient(1200px 500px at 85% -10%,#cfe8ff 0,transparent 60%),linear-gradient(180deg,#eaf4ff,#f5f9fd);padding:56px 0 40px}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
 .kicker{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:.82rem;font-weight:700;color:var(--brand2)}
@@ -130,6 +131,7 @@ footer a{color:#fff}
     <div class="cta">
       <a class="btn btn-main" href="#quote" data-t="ctaQuote">Get my free quote</a>
       <a class="btn btn-ghost js-call" href="#quote" data-t="ctaCall">Call me</a>
+      <a class="btn btn-wa js-wa" href="#quote" target="_blank" rel="noopener" data-t="ctaWa">WhatsApp</a>
     </div>
     <ul class="ticks">
       <li data-t="t1">Free installation</li><li data-t="t2">Filters & service included</li><li data-t="t3">Yours at the end of the contract</li>
@@ -216,6 +218,7 @@ footer a{color:#fff}
     <div class="full err" id="ferr"></div>
     <div class="full send">
       <button class="btn btn-main" type="button" id="bySms" data-t="bySms">Send by text</button>
+      <button class="btn btn-wa" type="button" id="byWa" data-t="byWa">Send on WhatsApp</button>
       <button class="btn btn-ghost" type="button" id="byMail" data-t="byMail">Send by email</button>
       <a class="btn btn-green js-call" href="#" data-t="byCall">Call now</a>
     </div>
@@ -232,7 +235,7 @@ footer a{color:#fff}
 </div></section>
 </main>
 
-<div class="sticky-call"><a class="btn btn-green js-call" href="#" data-t="byCall">Call now</a><a class="btn btn-main" href="#quote" data-t="ctaQuote">Get my free quote</a></div>
+<div class="sticky-call"><a class="btn btn-green js-call" href="#" data-t="byCall">Call now</a><a class="btn btn-wa js-wa" href="#" target="_blank" rel="noopener" data-t="ctaWa">WhatsApp</a><a class="btn btn-main" href="#quote" data-t="ctaQuote">Get my free quote</a></div>
 
 <footer><div class="wrap">
   <p><strong data-t="brand">South Side Clean Water</strong> — <span id="repLine"></span></p>
