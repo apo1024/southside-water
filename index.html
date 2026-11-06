@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>South Side Clean Water — water & air purifier rentals, installed</title>
+<meta name="description" content="Rent a water or air purifier on Chicago's South Side: installation, filters and service included. Free quote by text, phone or email."/>
+<meta property="og:title" content="South Side Clean Water"/>
+<meta property="og:description" content="Clean water at home or at work, from about $20 a month — installed and maintained. Free quote."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4C22 18 12 30 12 41a20 20 0 0 0 40 0C52 30 42 18 32 4z' fill='%231d7fd8'/%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#0d2238;--muted:#5b6f86;--line:#dde6ef;--bg:#f5f9fd;--card:#fff;--brand:#1d7fd8;--brand2:#0a5aa6;--accent:#1fb38a;--warm:#ff8a3d;--r:18px;--shadow:0 10px 30px rgba(13,34,56,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--brand2)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;color:var(--ink);font-size:1.05rem}
+.logo svg{width:28px;height:28px}
+.top nav{margin-left:auto;display:flex;gap:6px;align-items:center}
+.top nav a{font-size:.9rem;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:99px}
+.top nav a:hover{background:var(--bg);color:var(--ink)}
+.lang{border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 12px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:99px;padding:13px 22px;font-weight:800;font-size:1rem;cursor:pointer;text-decoration:none;font-family:inherit}
+.btn-main{background:var(--brand);color:#fff}.btn-main:hover{background:var(--brand2)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-green{background:var(--accent);color:#fff}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#cfe8ff 0,transparent 60%),linear-gradient(180deg,#eaf4ff,#f5f9fd);padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.kicker{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:.82rem;font-weight:700;color:var(--brand2)}
+h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.08;margin:14px 0 12px;letter-spacing:-.02em}
+.lead{font-size:1.12rem;color:var(--muted);max-width:560px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 14px}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:0;list-style:none;font-weight:600;font-size:.93rem}
+.ticks li::before{content:"✓ ";color:var(--accent);font-weight:800}
+.hero-card{background:#fff;border-radius:24px;box-shadow:var(--shadow);padding:22px;border:1px solid var(--line)}
+.hero-card h3{margin:0 0 6px}
+.price-big{font-size:2.4rem;font-weight:800;color:var(--brand2);line-height:1}
+.price-big small{font-size:1rem;color:var(--muted);font-weight:600}
+section{padding:46px 0}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 22px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.step b{display:flex;width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;align-items:center;justify-content:center;margin-bottom:8px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:99px;padding:8px 14px;font-weight:700;cursor:pointer;font-family:inherit;color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.plan{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin-bottom:18px;font-size:.93rem}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:7px 13px;font-weight:700;cursor:pointer;font-family:inherit;color:var(--muted)}
+.seg button.on{background:var(--brand);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;position:relative}
+.card .ic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:#eaf4ff}
+.card .ic svg{width:30px;height:30px}
+.card[data-cat=air] .ic{background:#e6f8f2}.card[data-cat=bath] .ic{background:#fff1e7}.card[data-cat=massage] .ic{background:#f1ecff}
+.badge{position:absolute;top:14px;right:14px;font-size:.7rem;font-weight:800;padding:3px 8px;border-radius:99px;background:var(--warm);color:#fff}
+.badge.new{background:var(--accent)}
+.card h3{font-size:1rem;margin:2px 0 0}
+.model{font-size:.75rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:.72rem;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:2px 8px;color:var(--muted)}
+.rent{margin-top:auto;font-size:1.6rem;font-weight:800;color:var(--brand2)}
+.rent small{font-size:.85rem;color:var(--muted);font-weight:600}
+.na{font-size:.85rem;color:var(--muted);font-weight:600}
+.meta{font-size:.78rem;color:var(--muted)}
+.card .btn{padding:10px 14px;font-size:.92rem}
+.pimg{width:132px;height:132px;border-radius:50%;object-fit:cover;align-self:center;background:#eef3f8;border:4px solid #fff;box-shadow:0 6px 18px rgba(13,34,56,.12)}
+details.plans{border-top:1px solid var(--line);padding-top:6px}
+details.plans summary{cursor:pointer;font-weight:700;font-size:.88rem;color:var(--brand2)}
+.pt{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:6px}
+.pt th,.pt td{padding:5px 4px;border-bottom:1px solid var(--line);text-align:right}
+.pt th:first-child{text-align:left;font-weight:600;color:var(--muted)}
+.pt thead th{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.pt tr.sel th{color:var(--ink)}
+.pt td.on{background:#e3f0fd;font-weight:800;color:var(--brand2);border-radius:6px}
+.pt tr.extra th,.pt tr.extra td{font-size:.74rem;color:var(--muted)}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:18px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px}
+.calc label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}
+.calc input[type=range]{width:100%}
+.out{background:var(--bg);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px;justify-content:center}
+.out .row{display:flex;justify-content:space-between;font-weight:600}
+.save{font-size:1.9rem;font-weight:800;color:var(--accent)}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ben{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.ben h3{margin:0 0 4px;font-size:1.02rem}
+.area{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.area span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:4px 10px;font-weight:700;font-size:.85rem}
+form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form .full{grid-column:1/-1}
+form label{font-weight:700;font-size:.88rem;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #c9d6e3;border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:84px;resize:vertical}
+.send{display:flex;flex-wrap:wrap;gap:10px}
+.note{font-size:.82rem;color:var(--muted)}
+.err{color:#c0392b;font-weight:700;font-size:.88rem;min-height:1.2em}
+details.faq{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+details.faq summary{font-weight:700;cursor:pointer}
+footer{background:var(--ink);color:#c9d6e3;padding:32px 0;font-size:.86rem}
+footer a{color:#fff}
+.sticky-call{display:none}
+@media (max-width:900px){.hero .wrap,.calc{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr}.top nav a{display:none}}
+@media (max-width:560px){form{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
+  .sticky-call{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;gap:8px}
+  .sticky-call .btn{flex:1;box-shadow:0 8px 24px rgba(0,0,0,.18)} body{padding-bottom:76px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top"><svg viewBox="0 0 64 64"><path d="M32 4C22 18 12 30 12 41a20 20 0 0 0 40 0C52 30 42 18 32 4z" fill="#1d7fd8"/><path d="M24 42a8 8 0 0 0 8 8" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></svg><span data-t="brand">South Side Clean Water</span></a>
+  <nav>
+    <a href="#products" data-t="navProducts">Products</a>
+    <a href="#savings" data-t="navSavings">Savings</a>
+    <a href="#how" data-t="navHow">How it works</a>
+    <a href="#quote" data-t="navQuote">Free quote</a>
+    <button class="lang" id="lang" type="button">Español</button>
+  </nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="kicker" data-t="kicker">Chicago South Side · water & air purifier rentals</span>
+    <h1 data-t="h1">Clean, cold & hot water at home — no more carrying jugs.</h1>
+    <p class="lead" data-t="lead">Rent a Cuckoo water or air purifier for a low monthly price. Installation, filter changes and repairs are included, and after 5 or 6 years it's yours.</p>
+    <div class="cta">
+      <a class="btn btn-main" href="#quote" data-t="ctaQuote">Get my free quote</a>
+      <a class="btn btn-ghost js-call" href="#quote" data-t="ctaCall">Call me</a>
+    </div>
+    <ul class="ticks">
+      <li data-t="t1">Free installation</li><li data-t="t2">Filters & service included</li><li data-t="t3">Yours at the end of the contract</li>
+    </ul>
+  </div>
+  <div class="hero-card">
+    <h3 data-t="fromLabel">Water purifiers from</h3>
+    <div class="price-big">$19.99<small data-t="perMonth"> /month</small></div>
+    <p class="note" data-t="fromNote">Nano FIT countertop purifier, 6-year self-care plan. Air purifiers from $17.99/month.</p>
+    <p style="margin:12px 0 0;font-weight:700" data-t="localNote">Local help in your language — English & Spanish.</p>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2 data-t="howTitle">How it works</h2>
+  <p class="sub" data-t="howSub">Four simple steps, no big payment upfront.</p>
+  <div class="steps">
+    <div class="step"><b>1</b><strong data-t="s1t">Pick a product</strong><p class="note" data-t="s1">Water, air, bidet or massage chair. Not sure? I'll help you choose.</p></div>
+    <div class="step"><b>2</b><strong data-t="s2t">Get your quote</strong><p class="note" data-t="s2">Send your request by text or email. I answer the same day.</p></div>
+    <div class="step"><b>3</b><strong data-t="s3t">Free installation</strong><p class="note" data-t="s3">A technician installs it at your home or business.</p></div>
+    <div class="step"><b>4</b><strong data-t="s4t">Enjoy, worry-free</strong><p class="note" data-t="s4">Filters and repairs are covered for the whole contract.</p></div>
+  </div>
+</div></section>
+
+<section id="products" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <h2 data-t="prodTitle">Products & monthly prices</h2>
+  <p class="sub" data-t="prodSub">Prices from the Cuckoo Rental America price sheet. Choose the contract length and the care type to compare.</p>
+  <div class="filters" id="filters"></div>
+  <div class="plan">
+    <span><strong data-t="lengthLabel">Contract:</strong> <span class="seg" id="years"></span></span>
+    <span><strong data-t="careLabel">Care:</strong> <span class="seg" id="care"></span></span>
+    <span class="note" id="careHelp"></span>
+  </div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="savings"><div class="wrap">
+  <h2 data-t="calcTitle">How much do you spend on bottled water?</h2>
+  <p class="sub" data-t="calcSub">Move the sliders — an estimate for your household.</p>
+  <div class="calc">
+    <div>
+      <label for="gal"><span data-t="galLabel">Gallons of water per week</span>: <span id="galV"></span></label>
+      <input id="gal" type="range" min="1" max="20" value="5"/>
+      <label for="ppg"><span data-t="ppgLabel">Price per gallon you pay</span>: $<span id="ppgV"></span></label>
+      <input id="ppg" type="range" min="0.5" max="4" step="0.1" value="1.5"/>
+      <label for="pick" data-t="pickLabel">Compare with</label>
+      <select id="pick"></select>
+    </div>
+    <div class="out">
+      <div class="row"><span data-t="bottled">Bottled water / month</span><span id="o1"></span></div>
+      <div class="row"><span data-t="rental">Purifier rental / month</span><span id="o2"></span></div>
+      <div class="row" style="border-top:1px solid var(--line);padding-top:8px"><span data-t="diff">Difference / month</span><span id="o3"></span></div>
+      <div class="save" id="o4"></div>
+      <p class="note" data-t="calcNote">Plus: no jugs to carry or store, hot & cold water on tap, less plastic.</p>
+    </div>
+  </div>
+</div></section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <h2 data-t="benTitle">What's included</h2>
+  <p class="sub" data-t="benSub">From the Cuckoo Rental America program.</p>
+  <div class="benefits">
+    <div class="ben"><h3 data-t="b1t">Free installation</h3><p class="note" data-t="b1">On every product (a few exceptions). Self-install models like the bidet ship to you.</p></div>
+    <div class="ben"><h3 data-t="b2t">Filters & repairs covered</h3><p class="note" data-t="b2">Free filter changes and after-sales service for the whole rental contract.</p></div>
+    <div class="ben"><h3 data-t="b3t">It becomes yours</h3><p class="note" data-t="b3">Ownership transfers automatically at the end of a 5- or 6-year contract.</p></div>
+  </div>
+  <h3 style="margin:26px 0 4px" data-t="areaTitle">Areas I serve</h3>
+  <p class="note" data-t="areaSub">Based in 60637. Chicago's South Side and nearby:</p>
+  <div class="area" id="area"></div>
+</div></section>
+
+<section id="quote"><div class="wrap">
+  <h2 data-t="qTitle">Get your free quote</h2>
+  <p class="sub" data-t="qSub">No commitment. Fill this in, then tap “Send by text” or “Send by email”.</p>
+  <form id="qform" novalidate>
+    <div><label for="fname" data-t="fName">Your name</label><input id="fname" autocomplete="name" required/></div>
+    <div><label for="fphone" data-t="fPhone">Phone</label><input id="fphone" type="tel" autocomplete="tel" required/></div>
+    <div><label for="fzip" data-t="fZip">ZIP code</label><input id="fzip" inputmode="numeric" maxlength="5" autocomplete="postal-code"/></div>
+    <div><label for="fwho" data-t="fWho">For</label><select id="fwho"><option value="home" data-t="home">My home</option><option value="business" data-t="business">My business / office / church</option></select></div>
+    <div class="full"><label for="fprod" data-t="fProd">Product</label><select id="fprod"></select></div>
+    <div><label for="fyears" data-t="fYears">Contract</label><select id="fyears"><option value="6">6 years</option><option value="5" selected>5 years</option><option value="3">3 years</option><option value="buy">Buy outright</option></select></div>
+    <div><label for="fwhen" data-t="fWhen">Best time to reach me</label><select id="fwhen"><option data-t="any">Any time</option><option data-t="morning">Morning</option><option data-t="afternoon">Afternoon</option><option data-t="evening">Evening</option></select></div>
+    <div class="full"><label for="fmsg" data-t="fMsg">Questions (optional)</label><textarea id="fmsg"></textarea></div>
+    <div class="full err" id="ferr"></div>
+    <div class="full send">
+      <button class="btn btn-main" type="button" id="bySms" data-t="bySms">Send by text</button>
+      <button class="btn btn-ghost" type="button" id="byMail" data-t="byMail">Send by email</button>
+      <a class="btn btn-green js-call" href="#" data-t="byCall">Call now</a>
+    </div>
+    <p class="full note" data-t="privacy">Your details go only to me, through your own phone or email app. This site stores nothing.</p>
+  </form>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2 data-t="faqTitle">Questions</h2>
+  <details class="faq"><summary data-t="q1">What is the difference between self-care and visit-care?</summary><p class="note" data-t="a1">Self-care: you receive the new filters and change them yourself (easy, a few minutes). Visit-care: a technician comes to clean and change filters. Some models are visit-care only.</p></details>
+  <details class="faq"><summary data-t="q2">Do I need to own my home?</summary><p class="note" data-t="a2">No. Countertop and standing models don't need any drilling. Ask me about your situation.</p></details>
+  <details class="faq"><summary data-t="q3">What happens at the end of the contract?</summary><p class="note" data-t="a3">After a 5- or 6-year contract, the product becomes yours. With a 3-year contract you can keep renting at a lower price (WeCare program).</p></details>
+  <details class="faq"><summary data-t="q4">Are the prices final?</summary><p class="note" data-t="a4">Prices come from the current Cuckoo Rental America price sheet and can change. Your final price is confirmed before you sign; approval and the contract are with Cuckoo Rental America.</p></details>
+</div></section>
+</main>
+
+<div class="sticky-call"><a class="btn btn-green js-call" href="#" data-t="byCall">Call now</a><a class="btn btn-main" href="#quote" data-t="ctaQuote">Get my free quote</a></div>
+
+<footer><div class="wrap">
+  <p><strong data-t="brand">South Side Clean Water</strong> — <span id="repLine"></span></p>
+  <p id="disclaimer"></p>
+  <p data-t="tm">Cuckoo is a trademark of its owner. Product names and prices belong to Cuckoo Rental America and may change without notice.</p>
+</div></footer>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
