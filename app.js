@@ -3,7 +3,7 @@
 window.CONFIG = {
   repName: 'Dreamlore LLC',    // shown in the footer
   phone: '9545917771',         // e.g. '3125550100' (digits only) — used for "Text" and "Call"
-  email: '',                   // e.g. 'you@gmail.com'
+  email: 'info@idreamlore.com', // e.g. 'you@gmail.com'
   base: '60637',               // only the ZIP is shown publicly
   authorized: false,           // true once Cuckoo Rental America has accepted you as a representative
   // Estimated taxes added on top of the brochure prices (to adjust later):
