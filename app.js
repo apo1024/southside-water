@@ -22,7 +22,7 @@ window.CONFIG = {
 
   var T = {
     en: {
-      brand: 'South Side Clean Water', navProducts: 'Products', navSavings: 'Savings', navHow: 'How it works', navQuote: 'Free quote',
+      brand: 'South Side Clean Water', navProducts: 'Products', navWhy: 'Why clean water', navSavings: 'Savings', navHow: 'How it works', navQuote: 'Free quote',
       kicker: 'Chicago South Side · water & air purifier rentals',
       h1: 'Clean, cold & hot water at home — no more carrying jugs.',
       lead: "Rent a Cuckoo water or air purifier for a low monthly price. Installation, filter changes and repairs are included, and after 5 or 6 years it's yours.",
@@ -70,7 +70,7 @@ window.CONFIG = {
       smsIntro: 'Hello! I would like a free quote.', yearsOpt: { 6: '6 years', 5: '5 years', 3: '3 years', buy: 'Buy outright' }
     },
     es: {
-      brand: 'South Side Clean Water', navProducts: 'Productos', navSavings: 'Ahorro', navHow: 'Cómo funciona', navQuote: 'Cotización gratis',
+      brand: 'South Side Clean Water', navProducts: 'Productos', navWhy: 'Por qué agua limpia', navSavings: 'Ahorro', navHow: 'Cómo funciona', navQuote: 'Cotización gratis',
       kicker: 'South Side de Chicago · renta de purificadores de agua y aire',
       h1: 'Agua limpia, fría y caliente en casa — sin cargar garrafones.',
       lead: 'Renta un purificador de agua o de aire Cuckoo por un pago mensual bajo. La instalación, los filtros y las reparaciones están incluidos, y después de 5 o 6 años es tuyo.',
